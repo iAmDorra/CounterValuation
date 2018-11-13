@@ -1,2 +1,2 @@
 # CounterValuation
-Countervaluate amount by currency
+Counter-value the amount by currency
