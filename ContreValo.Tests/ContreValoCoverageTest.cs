@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using NFluent;
 using NSubstitute;
-using ContreValo;
 
 namespace ContreValo.Tests
 {
@@ -23,7 +20,7 @@ namespace ContreValo.Tests
             var updatedDeals = contrevalo.ConvertAmounts(deals, currency);
 
             // Assert
-            //rates.Received(1).GetRates(Arg.Any<Currency>());
+            rates.Received(1).GetRates(Arg.Any<Currency>());
         }
 
         [TestMethod]
@@ -40,7 +37,7 @@ namespace ContreValo.Tests
             var updatedDeals = contrevalo.ConvertAmounts(deals, currency);
 
             // Assert
-            //rates.Received(1).GetRates(Arg.Any<Currency>());
+            rates.Received(1).GetRates(Arg.Any<Currency>());
         }
 
     }

@@ -11,7 +11,7 @@ namespace ContreValo.Tests
     [TestClass]
     public class ContreValoBusinessTest
     {
-       // [TestMethod]
+        [TestMethod]
         public void Should_return_same_deal_amounts_when_no_rate_found()
         {
             // Arrange
@@ -27,7 +27,7 @@ namespace ContreValo.Tests
             Check.That(updatedDeals[0].Amount).IsEqualTo(12);
         }
 
-       // [TestMethod]
+        [TestMethod]
         public void Should_calculate_deal_amount_when_rate_found()
         {
             // Arrange
